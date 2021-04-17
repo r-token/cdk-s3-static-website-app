@@ -1,6 +1,6 @@
 # Welcome to your CDK TypeScript project!
 
-This is a blank project for TypeScript development with CDK.
+This app uses the cdk-s3-static-website-construct CDK construct that's hosted as an NPM package at https://www.npmjs.com/package/@r-token/s3-static-website-construct
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
