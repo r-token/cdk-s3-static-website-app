@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@aws-cdk/core": "1.98.0",
-    "@r-token/s3-static-website-construct": "^0.7.0",
+    "@r-token/s3-static-website-construct": "^0.8.0",
     "source-map-support": "^0.5.19"
   }
 }
