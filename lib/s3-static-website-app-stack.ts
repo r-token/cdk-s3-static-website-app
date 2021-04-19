@@ -3,12 +3,14 @@ import * as s3website from '@r-token/s3-static-website-construct'
 
 export interface S3StaticWebsiteAppStackProps extends cdk.StackProps {
   projectName: string,
-  s3WebsiteDeploySource: string
+  s3WebsiteDeploySource: string,
   websiteIndexDocument: string,
   websiteErrorDocument: string,
-  cdnComment: string,
   cdnWebsiteIndexDocument: string,
-  useCdn: boolean
+  cdnComment: string,
+  useCdn: boolean,
+  bucketVersioned: boolean,
+  requireBucketEncryption: boolean
 } 
 
 export class S3StaticWebsiteAppStack extends cdk.Stack {
@@ -21,9 +23,11 @@ export class S3StaticWebsiteAppStack extends cdk.Stack {
       s3WebsiteDeploySource: props.s3WebsiteDeploySource,
       websiteIndexDocument: props.websiteIndexDocument,
       websiteErrorDocument: props.websiteErrorDocument,
-      cdnComment: props.cdnComment,
       cdnWebsiteIndexDocument: props.cdnWebsiteIndexDocument,
-      useCdn: props.useCdn
+      cdnComment: props.cdnComment,
+      useCdn: props.useCdn,
+      bucketVersioned: props.bucketVersioned,
+      requireBucketEncryption: props.requireBucketEncryption
     })
   }
 }
